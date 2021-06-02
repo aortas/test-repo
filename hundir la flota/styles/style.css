@@ -1,0 +1,252 @@
+body {
+    background-image: url(img/agua.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+header {
+    height:150px;
+    padding:3%;
+    background:repeating-linear-gradient(45deg, transparent,transparent 35px,rgba(255,255,255,.1)35px,rgba(255,255,255,.2)70px),
+		repeating-linear-gradient(-45deg, transparent,transparent 35px,rgba(255,255,255,.2)35px,rgba(255,255,255,.1)70px),
+		rgba(209, 209, 209, 0.2); 
+}
+
+h1 {
+    font-family: 'Goblin One', cursive;
+    font-weight:bolder;
+    font-size: 3.5rem;
+    color: rgba(0, 48, 87, 1);
+    text-align: center;
+    padding-top: 1%;
+}
+
+    #container {
+    background-color:rgba(0, 48, 87, 0.7);
+    display:flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+#tablero {
+    padding-right: 15px;
+    padding-top: 7%; 
+    width:55%;
+    height: 650px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px ;
+    grid-auto-flow: column;
+}
+
+
+.letras {
+    padding-top: 15px;
+    color: white;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 0.8 rem;
+    grid-auto-flow: row;
+    grid-row:1;
+    text-align: left;
+
+}
+    
+
+.numbers {
+    padding-left: 35px;
+    padding-top: 15px;
+    color: white;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 0.8 rem;
+    grid-auto-flow: column;
+    grid-column:1;
+    justify-content: center;
+}
+
+#casillas {
+    display: grid;
+    grid-column:2/12;
+    grid-row:2/12;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto ;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+    grid-auto-flow: row;
+    
+}
+#row-one {
+    display:grid;
+    grid-auto-flow: row;
+    border:solid 0.2px rgba(250, 250, 250, 0.596);
+    grid-auto-flow: column;
+    grid-row: 1;
+    grid-column: 1/11;
+    
+}
+
+#row-two {
+    display:grid;
+    grid-auto-flow: column;
+    border:solid 0.2px rgba(250, 250, 250, 0.596);
+    grid-row: 2;
+    grid-column: 1/11;
+    
+}
+
+#row-three {
+    display:grid;
+    border:solid 0.2px rgba(250, 250, 250, 0.596);
+    grid-auto-flow: column;
+    grid-row: 3;
+    grid-column: 1/11;
+    
+}
+
+
+#row-four {
+    display:grid;
+    grid-auto-flow: column;
+    border:solid 0.2px rgba(250, 250, 250, 0.596);
+    grid-row: 4;
+    grid-column: 1/11;
+    
+}
+
+
+#row-five {
+    border:solid 0.2px rgba(250, 250, 250, 0.596);
+    display:grid;
+    grid-auto-flow: column;
+    grid-row: 5;
+    grid-column: 1/11;
+    
+}
+
+
+#row-six {
+    border:solid 0.2px rgba(250, 250, 250, 0.596);
+    display:grid;
+    grid-auto-flow: column;
+    grid-row: 6;
+    grid-column: 1/11;
+    
+}
+
+#row-seven {
+    border:solid 0.2px rgba(250, 250, 250, 0.596);
+    display:grid;
+    grid-auto-flow: column;
+    grid-row: 7;
+    grid-column: 1/11;
+    
+}
+
+#row-eight {
+    border:solid 0.2px rgba(250, 250, 250, 0.596);
+    display:grid;
+    grid-auto-flow: column;
+    grid-row: 8;
+    grid-column: 1/11;
+    
+}
+
+#row-nine {
+    border:solid 0.2px rgba(250, 250, 250, 0.596);
+    display:grid;
+    grid-auto-flow: column;
+    grid-row: 9;
+    grid-column: 1/11;
+    
+}
+
+#row-ten {
+    border:solid 0.2px rgba(250, 250, 250, 0.596);
+    display:grid;
+    grid-auto-flow: column;
+    grid-row: 10;
+    grid-column: 1/11;
+    
+}
+.water{
+    border:solid 0.2px rgba(250, 250, 250, 0.596);
+
+}
+
+.water:hover {
+    background: repeating-linear-gradient(-45deg, transparent,transparent 15px,rgba(255,255,255,.5)15px,rgba(255,255,255,.5)35px),rgba(156, 208, 250,0.2);
+}
+
+
+
+.fire:hover {
+    background: repeating-linear-gradient(-45deg, transparent,transparent 15px,rgba(255,255,255,.5)15px,rgba(255,255,255,.5)35px),rgba(156, 208, 250,0.2);
+}
+
+
+
+@keyframes animaRotate{
+	from{
+    transform: rotate(0);
+    }
+	to{
+    transform: rotate(45deg);
+    }
+}
+
+
+
+#boats{
+    padding-top: 7%;    
+    width:30%;
+    height: 650px;
+}
+
+#pirata {
+    width: 100%;
+    height: 40%;
+    background-image: url(img/pirata.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 0.8 rem;
+    
+}
+
+#titanic{
+    width: 100%;
+    height: 40%;
+    background-image: url(img/titanic.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 0.8 rem;
+    
+}
+
+
+h2 {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 0.8 rem;
+    text-align: center;
+    padding-bottom: 10%;
+}
+
+#tocados {
+    color:red
+}
+
+#hundidos{
+    color: cyan;
+}
+
+#btn-generate {
+    padding:10px;
+}
